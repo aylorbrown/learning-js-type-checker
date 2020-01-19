@@ -21,7 +21,23 @@ body {
     font-family: "Faune";
     font-size: 16px; 
     line-height: 1.5;
+    margin: 40px 40px 40px 320px;
 
-    background-color: white; 
+    background-color: #2a2a2a; 
+    color: white;
 }
 
+section.options {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+
+    background-color: #2a2a2a;
+}
+
+
+/* section.output {
+
+} */
