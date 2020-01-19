@@ -41,8 +41,17 @@ section.options {
 }
 
 
-section.output {
+textarea.output {
     font-size: 64px;
+    width: 100%;
+    min-height: 100vh;
+    border: none;
+    outline: none;
+
+
+    background: none;
+    color: white;
+
 }
 
 h1 {
@@ -51,12 +60,17 @@ h1 {
 }
 
 div.option {
-    margin: 10px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 label {
     display: block; 
     margin: 0 0 0 5px;
+}
+
+label.span {
+    float: right;
+    font-style: italic;
 }
 
 
@@ -66,4 +80,8 @@ input[type="text"] {
     border: none;
     color: white; 
     padding: 5px 7px 5px 7px;
+}
+
+input[type="range"] {
+    width: 100%;
 }
