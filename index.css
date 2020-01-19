@@ -31,13 +31,39 @@ section.options {
     position: fixed; 
     top: 0;
     left: 0;
-    width: 280px;
+    width: 180px;
     height: 100vh;
 
     background-color: #2a2a2a;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+    padding: 40px;
 }
 
 
 /* section.output {
 
 } */
+
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+div.option {
+    margin: 10px 0 0 0;
+}
+
+label {
+    display: block; 
+    margin: 0 0 0 5px;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    background-color: #575757;
+    border: none;
+    color: white; 
+    padding: 5px 7px 5px 7px;
+}
