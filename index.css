@@ -41,9 +41,9 @@ section.options {
 }
 
 
-/* section.output {
-
-} */
+section.output {
+    font-size: 64px;
+}
 
 h1 {
     font-weight: 700;
