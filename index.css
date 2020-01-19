@@ -68,7 +68,7 @@ label {
     margin: 0 0 0 5px;
 }
 
-label.span {
+label span {
     float: right;
     font-style: italic;
 }
