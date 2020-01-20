@@ -10,6 +10,9 @@ const italicTag = document.querySelector(`input[name="italic"]`)
 
 const typefaceTag = document.querySelector(`select[name="typeface"]`)
 
+const fontweightTag = document.querySelector(`input[name="fontweight"]`)
+const fontweightOutput = document.querySelector("span.fontweight-output")
+
 const outputTag = document.querySelector("textarea.output")
 const originalText = outputTag.value
 
@@ -36,6 +39,7 @@ typesizeTag.addEventListener("input", function () {
     typesizeOutput.innerHTML = this.value + " pixels"
 })
 
+
 lineheightTag.addEventListener("input", function() {
     outputTag.style.lineHeight = this.value
     lineheightOutput.innerHTML = this.value
@@ -55,4 +59,11 @@ italicTag.addEventListener("change", function () {
 // when user changes select for typeface, update the font family
 typefaceTag.addEventListener("input", function () {
     outputTag.style.fontFamily = this.value
+})
+
+
+//when a user changes fontweight slide, change the outputTag's font weight 
+fontweightTag.addEventListener("input", function () {
+    outputTag.style.fontWeight = this.value
+    fontweightOutput.innerHTML = this.value
 })
