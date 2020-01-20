@@ -115,5 +115,9 @@ div.colors div {
 
     text-align: center;
     margin: 5px 10px 5px 10px;
+    transition: border 0.25s;
+}
 
+div.colors div.selected {
+    border: 2px solid white;
 }

@@ -73,6 +73,8 @@ fontweightTag.addEventListener("input", function () {
 
 //go through all colorTags, then...
 //when user clicks one of them, change the background and text color
+//and make this tag be selected 
+
 colorTags.forEach(tag => {
     // colorTags.forEach(function (tag) => {} )
     // colorTags.forEach((tag) => {} )
@@ -80,7 +82,14 @@ colorTags.forEach(tag => {
         tag.addEventListener("click", function () {
             outputTag.style.backgroundColor = this.style.backgroundColor 
             outputTag.style.color = this.style.color
+    
+    // reset the classes 
+    colorTags.forEach(tag => {
+        tag.classList.remove("selected")
+    })
 
+    //only to this clicked one 
+    this.classList.add("selected")       
     })
  
 })
