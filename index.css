@@ -24,7 +24,7 @@ body {
     font-family: "Faune";
     font-size: 16px; 
     line-height: 1.5;
-    margin: 40px 40px 40px 320px;
+    margin: 0px 0px 0px 280px;
 
     background-color: #2a2a2a; 
     color: white;
@@ -50,6 +50,7 @@ textarea.output {
     min-height: 100vh;
     border: none;
     outline: none;
+    padding: 40px;
 
 
     background: none;
@@ -100,4 +101,19 @@ input[type="range"] {
 
 select { 
     width: 100%;
+}
+
+div.colors {
+    display: flex; 
+}
+
+div.colors div {
+    height: 22px; 
+    width: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+
+    text-align: center;
+    margin: 5px 10px 5px 10px;
+
 }

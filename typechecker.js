@@ -13,6 +13,9 @@ const typefaceTag = document.querySelector(`select[name="typeface"]`)
 const fontweightTag = document.querySelector(`input[name="fontweight"]`)
 const fontweightOutput = document.querySelector("span.fontweight-output")
 
+const colorTags = document.querySelectorAll("div.colors div")
+
+
 const outputTag = document.querySelector("textarea.output")
 const originalText = outputTag.value
 
@@ -66,4 +69,18 @@ typefaceTag.addEventListener("input", function () {
 fontweightTag.addEventListener("input", function () {
     outputTag.style.fontWeight = this.value
     fontweightOutput.innerHTML = this.value
+})
+
+//go through all colorTags, then...
+//when user clicks one of them, change the background and text color
+colorTags.forEach(tag => {
+    // colorTags.forEach(function (tag) => {} )
+    // colorTags.forEach((tag) => {} )
+    
+        tag.addEventListener("click", function () {
+            outputTag.style.backgroundColor = this.style.backgroundColor 
+            outputTag.style.color = this.style.color
+
+    })
+ 
 })
